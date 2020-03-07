@@ -1,6 +1,5 @@
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
-Git has a mutable index called stage.
+//Mac 安装git客户端
+brew install git
 
 //ssh生成的.pub文件查看
 //使用cd命令进入id_rsa.pub目录: 
@@ -21,6 +20,9 @@ git config --global user.email "jifengliu@139.com"
 git add .
 //把文件提交到仓库
 git commit -m "First Commit"
-//上传到github
-git push
+
+//上传到github, 先连接网上的库，再推送
+git remote add origin git@github.com:michaelliao/learngit.git
+
+git push -u origin master
 
